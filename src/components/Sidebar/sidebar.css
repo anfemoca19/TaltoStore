@@ -1,0 +1,10 @@
+.container_Sidebar{
+    display: flex;
+    background-color: #d67074;
+    width: 4rem;
+    height: 100rem;
+}
+
+.container_Sidebar.home{
+    padding-left: 10px;
+}

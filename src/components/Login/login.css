@@ -1,0 +1,59 @@
+.main-container {
+  height: 100vh;
+  background-color: bisque;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  background-color: white;
+  border-radius: 5%;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.inputs-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.border-input {
+  border-radius: 5%;
+  border: solid #fafafa;
+  width: 60%;
+}
+
+.button-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pass,
+.email {
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+.having {
+  margin-top: 4px;
+}
+.container-button-siginin {
+  width: 60%;
+}
+.button-sign {
+  background-color: #fdc886;
+  font-size: 15px;
+  border-radius: 5%;
+  border: none;
+  width: 100%;
+  height: 30px;
+}
+footer {
+  margin-top: 10px;
+}
