@@ -1,6 +1,6 @@
 .main-container {
   height: 100vh;
-  background-color: bisque;
+  background-color: #f5f2ea;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -18,15 +18,24 @@
   justify-content: space-evenly;
   flex-direction: column;
 }
+.tittle-form {
+  margin: 13px;
+}
+.text-form {
+  margin-top: 1rem;
+  white-space: pre;
+}
 .inputs-form {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .border-input {
-  border-radius: 5%;
+  border-radius: 10px;
   border: solid #fafafa;
-  width: 60%;
+  width: 82%;
+  height: 40px;
+  outline: none;
 }
 
 .button-form {
@@ -34,10 +43,27 @@
   align-items: center;
   flex-direction: column;
 }
-.pass,
 .email {
   margin-top: 2px;
-  font-size: 15px;
+  font-size: 13px;
+  padding: 10px;
+}
+.container-pass {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.pass {
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+.icon-eye {
+  position: absolute;
+  top: 49%;
+  right: 39%;
+  cursor: pointer;
+  color: #93929280;
 }
 
 .having {
@@ -53,6 +79,9 @@
   border: none;
   width: 100%;
   height: 30px;
+}
+.social-id {
+  display: ;
 }
 footer {
   margin-top: 10px;

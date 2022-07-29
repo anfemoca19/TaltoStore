@@ -1,18 +1,43 @@
 import "../Login/login.css";
-
+import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faKey } from "@fortawesome/free-solid-svg-icons";
+import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faGoogle,
+  faApple,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Login() {
+  const [icon, setIcon] = useState(true);
+  const inputPass = useRef();
+
+  const actionIconEye = () => {
+    setIcon(!icon);
+    if (inputPass.current.type === "password") {
+      inputPass.current.type = "text";
+    }
+    if (!icon) {
+      inputPass.current.type = "password";
+    }
+  };
+
   return (
     <div className="main-container">
-      <div className="form">
-        <div className="title-form">
+      <header>
+        <div>
+          <div></div>
+        </div>
+      </header>
+      <section className="form">
+        <div className="tittle-form">
           <div>
-            <h1>Login</h1>
+            <h2>Agent Login</h2>
           </div>
           <div>
-            <p>Hey, Enter your details to get sing in to your account</p>
+            <p className="text-form">
+              Hey, Enter your details to get sing in to your account
+            </p>
           </div>
         </div>
         <div className="inputs-form">
@@ -21,11 +46,23 @@ export default function Login() {
             className="border-input email"
             placeholder="Enter email / Phone No"
           />
-          <input
-            type="text"
-            className="border-input  pass"
-            placeholder="Passcode"
-          />
+          <div className="border-input container-pass">
+            <input
+              type="password"
+              className=" pass"
+              placeholder="Passcode"
+              ref={inputPass}
+            />
+            <span
+              className="icon-eye"
+              onClick={() => {
+                actionIconEye();
+              }}
+            >
+              {icon && <FontAwesomeIcon icon={faEyeSlash} />}
+              {!icon && <FontAwesomeIcon icon={faEye} />}
+            </span>
+          </div>
           <span className="having">Having trouble in sing un?</span>
         </div>
         <div className="button-form">
@@ -35,16 +72,21 @@ export default function Login() {
           <div>
             <span> - Or Sign in with -</span>
           </div>
-          <div>
-            <button>Google</button>
-            <button>Apple ID</button>
+          <div className="social-id">
             <button>
-              <FontAwesomeIcon icon="fa-brands fa-facebook" />
-              Facebook
+              <FontAwesomeIcon icon={faGoogle} />
+              Google
+            </button>
+            <button>
+              <FontAwesomeIcon icon={faApple} />
+              Apple ID
+            </button>
+            <button>
+              <FontAwesomeIcon icon={faFacebook} /> Facebook
             </button>
           </div>
         </div>
-      </div>
+      </section>
       <footer>
         <span>Copyringht @wework 2022 \ Privacy Policy</span>
       </footer>
