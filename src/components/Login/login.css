@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .form {
   background-color: white;
   border-radius: 5%;
@@ -18,6 +17,7 @@
   justify-content: space-evenly;
   flex-direction: column;
 }
+/* estilos titulo */
 .tittle-form {
   margin: 13px;
 }
@@ -25,6 +25,7 @@
   margin-top: 1rem;
   white-space: pre;
 }
+/* Inptus */
 .inputs-form {
   display: flex;
   align-items: center;
@@ -60,29 +61,50 @@
 }
 .icon-eye {
   position: absolute;
-  top: 49%;
+  top: 43%;
   right: 39%;
   cursor: pointer;
   color: #93929280;
 }
-
 .having {
-  margin-top: 4px;
+  margin-top: 1rem;
 }
+/* buttoons */
 .container-button-siginin {
-  width: 60%;
+  width: 100%;
 }
 .button-sign {
   background-color: #fdc886;
   font-size: 15px;
-  border-radius: 5%;
+  border-radius: 10px;
   border: none;
-  width: 100%;
-  height: 30px;
+  width: 82%;
+  height: 40px;
+}
+.title-or-sign {
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 .social-id {
-  display: ;
+  display: flex;
+}
+.social {
+  background-color: white;
+  border: solid #fafafa;
+  border-radius: 9px;
+  padding: 3px;
+}
+.social-apple {
+  margin-left: 2px;
+}
+.social-facebook {
+  margin-left: 2px;
+}
+.request {
+  font-size: 10px;
+  margin-top: 10px;
 }
 footer {
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 12px;
 }

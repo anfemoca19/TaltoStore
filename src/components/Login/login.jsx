@@ -69,22 +69,27 @@ export default function Login() {
           <div className="container-button-siginin">
             <button className="button-sign">Sign in</button>
           </div>
-          <div>
+          <div className="title-or-sign">
             <span> - Or Sign in with -</span>
           </div>
+        </div>
+        <div className="button-form">
           <div className="social-id">
-            <button>
+            <button className="social-google social">
               <FontAwesomeIcon icon={faGoogle} />
               Google
             </button>
-            <button>
+            <button className="social-apple social">
               <FontAwesomeIcon icon={faApple} />
               Apple ID
             </button>
-            <button>
+            <button className="social-facebook social">
               <FontAwesomeIcon icon={faFacebook} /> Facebook
             </button>
           </div>
+          <span className="request">
+            Don't have an account? <b>Request Now</b>
+          </span>
         </div>
       </section>
       <footer>
