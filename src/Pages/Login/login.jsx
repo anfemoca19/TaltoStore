@@ -7,13 +7,12 @@ import {
   faGoogle,
   faApple,
 } from "@fortawesome/free-brands-svg-icons";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import InputText from "../../Components/Ui/inputs/InputText/inputText";
 
 export default function Login() {
   const [icon, setIcon] = useState(true);
   const inputPass = useRef();
-  const history = useHistory();
 
   const actionIconEye = () => {
     setIcon(!icon);

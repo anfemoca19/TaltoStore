@@ -1,9 +1,11 @@
+import "./register.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useState } from "react";
 import "../Login/login.css";
 import { Toaster } from "react-hot-toast";
 import InputText from "../../Components/Ui/inputs/InputText/inputText";
+import { NavLink } from "react-router-dom";
 
 export default function Register() {
   const inputPass = useRef();
@@ -99,6 +101,9 @@ export default function Register() {
             <button className="button-sign">Register</button>
           </div>
         </div>
+        <NavLink exact to="/login" className="return-login">
+          Back to login
+        </NavLink>
       </form>
       <footer>
         <span>Copyringht @wework 2022 | Privacy politique</span>
