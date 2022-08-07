@@ -1,0 +1,125 @@
+.main-container {
+  height: 100vh;
+  background-color: #f5f2ea;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  background-color: white;
+  border-radius: 5%;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+/* estilos titulo */
+.tittle-form {
+  margin: 13px;
+}
+.text-form {
+  margin-top: 1rem;
+  white-space: pre;
+}
+/* Inptus */
+.inputs-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.border-input {
+  border-radius: 10px;
+  border: solid #fafafa;
+  width: 82%;
+  /* height: 40px; */
+  outline: none;
+}
+
+.button-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.email {
+  margin-top: 2px;
+  font-size: 13px;
+  padding: 10px;
+}
+.container-pass {
+  display: flex;
+  margin-top: 8px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.pass {
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+.icon-eye {
+  /* position: absolute; */
+  top: 43%;
+  right: 39%;
+  cursor: pointer;
+  color: #93929280;
+}
+.having {
+  margin-top: 1rem;
+}
+/* buttoons */
+.container-button-siginin {
+  width: 100%;
+}
+.button-sign {
+  background-color: #fdc886;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  width: 82%;
+  height: 40px;
+}
+.title-or-sign {
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+.social-id {
+  display: flex;
+}
+.social {
+  background-color: white;
+  border: solid #fafafa;
+  border-radius: 9px;
+  padding: 3px;
+  height: 45px;
+  width: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.social-apple {
+  margin-left: 4px;
+}
+.social-facebook {
+  margin-left: 4px;
+}
+.request {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.request-now {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.request-now:hover {
+  color: black;
+}
+footer {
+  margin-top: 15px;
+  font-size: 12px;
+}
