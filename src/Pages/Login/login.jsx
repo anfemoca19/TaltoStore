@@ -1,4 +1,4 @@
-import "../Login/login.css";
+import "./login.css";
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
@@ -7,10 +7,13 @@ import {
   faGoogle,
   faApple,
 } from "@fortawesome/free-brands-svg-icons";
+import { NavLink, useHistory } from "react-router-dom";
+import InputText from "../../Components/Ui/inputs/InputText/inputText";
 
 export default function Login() {
   const [icon, setIcon] = useState(true);
   const inputPass = useRef();
+  const history = useHistory();
 
   const actionIconEye = () => {
     setIcon(!icon);
@@ -29,7 +32,7 @@ export default function Login() {
           <div></div>
         </div>
       </header>
-      <section className="form">
+      <form className="form">
         <div className="tittle-form">
           <div>
             <h2>Agent Login</h2>
@@ -41,7 +44,7 @@ export default function Login() {
           </div>
         </div>
         <div className="inputs-form">
-          <input
+          <InputText
             type="text"
             className="border-input email"
             placeholder="Enter email / Phone No"
@@ -63,7 +66,7 @@ export default function Login() {
               {!icon && <FontAwesomeIcon icon={faEye} />}
             </span>
           </div>
-          <span className="having">Having trouble in sing un?</span>
+          <span className="having">Having trouble in sing in?</span>
         </div>
         <div className="button-form">
           <div className="container-button-siginin">
@@ -77,23 +80,26 @@ export default function Login() {
           <div className="social-id">
             <button className="social-google social">
               <FontAwesomeIcon icon={faGoogle} />
-              Google
+              <span>Google</span>
             </button>
             <button className="social-apple social">
               <FontAwesomeIcon icon={faApple} />
-              Apple ID
+              <span>Apple ID</span>
             </button>
             <button className="social-facebook social">
-              <FontAwesomeIcon icon={faFacebook} /> Facebook
+              <FontAwesomeIcon icon={faFacebook} />
+              <span>Facebook</span>
             </button>
           </div>
           <span className="request">
-            Don't have an account? <b>Request Now</b>
+            <NavLink exact to="/register" className="request-now">
+              Don´t have an account? <b>Request Now</b>
+            </NavLink>
           </span>
         </div>
-      </section>
+      </form>
       <footer>
-        <span>Copyringht @wework 2022 \ Privacy Policy</span>
+        <span>Copyringht @wework 2022 | Privacy politique</span>
       </footer>
     </div>
   );

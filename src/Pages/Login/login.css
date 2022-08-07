@@ -35,7 +35,7 @@
   border-radius: 10px;
   border: solid #fafafa;
   width: 82%;
-  height: 40px;
+  /* height: 40px; */
   outline: none;
 }
 
@@ -51,6 +51,7 @@
 }
 .container-pass {
   display: flex;
+  margin-top: 8px;
   justify-content: space-between;
   padding: 10px;
 }
@@ -60,7 +61,7 @@
   font-size: 13px;
 }
 .icon-eye {
-  position: absolute;
+  /* position: absolute; */
   top: 43%;
   right: 39%;
   cursor: pointer;
@@ -82,7 +83,7 @@
   height: 40px;
 }
 .title-or-sign {
-  margin-top: 14px;
+  margin-top: 23px;
   margin-bottom: 10px;
 }
 .social-id {
@@ -93,16 +94,30 @@
   border: solid #fafafa;
   border-radius: 9px;
   padding: 3px;
+  height: 45px;
+  width: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 .social-apple {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 .social-facebook {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 .request {
   font-size: 10px;
   margin-top: 10px;
+}
+.request-now {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.request-now:hover {
+  color: black;
 }
 footer {
   margin-top: 15px;
